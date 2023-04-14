@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#000000</color>
+    <color name="white">#FEFFFF</color>
+    <color name="white_old">#FEFFE8</color>
+    <color name="colorPrimary">#0C2357</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0C2357</color>
+    <color name="colorBackground">#FEFFFF</color>
+    <color name="colorBackground_old">#FEFFE8</color>
+    <color name="bootsplash_background">#FEFFFF</color>
+    <color name="bootsplash_background_old">#FEFFE8</color>
+</resources>
