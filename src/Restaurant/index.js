@@ -22,6 +22,14 @@ class Stars extends React.Component {
 }
 
 class RestaurantList extends React.Component {
+  constructor(props) {
+    super(props)
+    this.apiKey = 'xxxxx'
+    this.state = {
+
+    }
+  }
+
   getDistanceFromLatLonInKm = (lat1, lon1, lat2, lon2) => {
     if (lat1 && lon1 && lat2 && lon2) {
       var deg2rad = deg => {
@@ -42,7 +50,6 @@ class RestaurantList extends React.Component {
 
   render() {
     const { restaurant, currentLocation } = this.props
-    const apiKey = ''
 
     return (
       <TouchableOpacity
@@ -52,7 +59,7 @@ class RestaurantList extends React.Component {
         <View style={{ ...styles.restaurantListPhotoBox, ...styles.shadow }}>
           {restaurant.photos?.[0]?.photo_reference ?
             <Image
-              source={{ uri: `https://maps.googleapis.com/maps/api/place/photo?key=${apiKey}&photoreference=${restaurant.photos?.[0]?.photo_reference}&maxwidth=100` }}
+              source={{ uri: `https://maps.googleapis.com/maps/api/place/photo?key=${this.apiKey}&photoreference=${restaurant.photos?.[0]?.photo_reference}&maxwidth=100` }}
               style={styles.restaurantListPhoto}
             />
             :
@@ -99,7 +106,7 @@ class RestaurantList extends React.Component {
 class RestaurantPage extends React.Component {
   constructor(props) {
     super(props)
-    this.apiKey = ''
+    this.apiKey = 'xxxxx'
     this.state = {
       isLoading: false,
       isFetchingMore: false,
