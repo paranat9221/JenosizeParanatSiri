@@ -42,7 +42,7 @@ class RestaurantList extends React.Component {
 
   render() {
     const { restaurant, currentLocation } = this.props
-    const apiKey = 'AIzaSyA0lHDsdZlV6LFVcMutWZagF7bE6lyF6-Q'
+    const apiKey = ''
 
     return (
       <TouchableOpacity
@@ -99,7 +99,7 @@ class RestaurantList extends React.Component {
 class RestaurantPage extends React.Component {
   constructor(props) {
     super(props)
-    this.apiKey = 'AIzaSyA0lHDsdZlV6LFVcMutWZagF7bE6lyF6-Q'
+    this.apiKey = ''
     this.state = {
       isLoading: false,
       isFetchingMore: false,
